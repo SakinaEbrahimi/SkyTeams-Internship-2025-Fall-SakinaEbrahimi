@@ -2,7 +2,6 @@
     // Author: Sakina Ebrahimi
     //Description: Test Temperature converter 
 
-const { default: expect } = require('expect')
 const {fahrenhietToCelsius , celsiusToFahrenhiet } = require('./question-4')
 
 describe('Fahrenhite to Celsius',()=>{

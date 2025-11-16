@@ -2,7 +2,6 @@
     // Author: Sakina Ebrahimi
     //Description: Test Calculate the area and perimeter of a rectangle
 
-const { default: expect } = require('expect')
 const {areaRectangle, perimeterRectangle } = require('./question-3')
 
 describe('Test for area rectangle function',()=>{
