@@ -5,18 +5,16 @@
 
 //function area
 function areaRectangle(width, length){
-    if( width <= 0 || length <= 0){
-        console.log("Number couldnot be zero or negative")
-        return false
+    if(width <= 0 || length <= 0){
+        throw new Error('length and width counldnot be negative or zero')
     }
    return (width*length)
 }
 
 //function perimeter
 function perimeterRectangle(width, length){
-    if( width <= 0 || length <= 0){
-        console.log("Number couldnot be zero or negative")
-        return false
+    if(width <= 0 || length <= 0){
+        throw new Error('length and width counldnot be negative or zero')
     }
     return 2*( width+length )
 }

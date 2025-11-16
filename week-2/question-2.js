@@ -1,7 +1,8 @@
 
     // Author: Sakina Ebrahimi
-    //Description: Function largest and smallest three number
+    //Description: Find the largest and smallest of three number
 
+//function largest number
 function largestNumber(num1, num2, num3){
     max = num1
     if( max < num2){
@@ -24,5 +25,4 @@ function smallestNumber(num1, num2, num3){
     }
     return min
 }
-
 module.exports = {largestNumber, smallestNumber}
