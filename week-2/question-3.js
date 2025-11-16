@@ -6,7 +6,7 @@
 //function area
 function areaRectangle(width, length){
     if(width <= 0 || length <= 0){
-        throw new Error('length and width counldnot be negative or zero')
+        throw new Error('length and width could not be negative or zero')
     }
    return (width*length)
 }
@@ -14,7 +14,7 @@ function areaRectangle(width, length){
 //function perimeter
 function perimeterRectangle(width, length){
     if(width <= 0 || length <= 0){
-        throw new Error('length and width counldnot be negative or zero')
+        throw new Error('length and width could not be negative or zero')
     }
     return 2*( width+length )
 }
