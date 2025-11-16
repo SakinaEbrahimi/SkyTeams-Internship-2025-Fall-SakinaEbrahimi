@@ -32,11 +32,11 @@ describe('Test Grade Calculator',()=>{
         expect(gradeCalculator(30)).toBe('F')
     })
     it('return an error when marks is less than zero',()=>{
-        expect(()=>gradeCalculator(-60)).toThrow()
-        expect(()=>gradeCalculator(-100)).toThrow()
+        expect(gradeCalculator(-60)).toBe(false)
+        expect(gradeCalculator(-100)).toBe(false)
     })
     it('return an error when marks is greater than 100',()=>{
-        expect(()=>gradeCalculator(110)).toThrow()
-        expect(()=>gradeCalculator(200)).toThrow()
+        expect(gradeCalculator(110)).toBe(false)
+        expect(gradeCalculator(200)).toBe(false)
     })
 })

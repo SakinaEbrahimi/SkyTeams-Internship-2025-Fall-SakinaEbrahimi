@@ -22,9 +22,9 @@ describe('Test Convert seconds to hours, minutes, and seconds', ()=>{
         expect(secondsToTime(8888)).toEqual(result)
     })
     it('return an error when input values is less and equal to zero', ()=>{
-        expect(()=>secondsToTime(0)).toThrow()
-        expect(()=> secondsToTime(-3655)).toThrow()
-        expect(()=> secondsToTime(-123456)).toThrow()
-        expect(()=>secondsToTime(-8888)).toThrow()
+        expect(secondsToTime(0)).toBe(false)
+        expect(secondsToTime(-3655)).toBe(false)
+        expect(secondsToTime(-123456)).toBe(false)
+        expect(secondsToTime(-8888)).toBe(false)
     })
 })

@@ -5,7 +5,7 @@
 module.exports = function gradeCalculator(mark){
 
     if( mark < 0 || mark > 100){
-        throw new Error('Invalid Marks')
+        return false
     }
 
     if( mark <= 100 && mark >= 90){

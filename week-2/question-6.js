@@ -7,7 +7,7 @@ function secondsToTime(seconds){
     var min = Math.trunc((seconds-(hour*3600))/60)
     var second = (seconds-(hour*3600)- (min*60))
     if(seconds <= 0){
-        throw new Error('Seconds should be greater than zero')
+        return false
     }
     return [`${hour} hours, ${min} min, ${second} seconds`]
    

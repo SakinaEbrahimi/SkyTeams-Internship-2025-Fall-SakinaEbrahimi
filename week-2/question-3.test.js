@@ -10,12 +10,12 @@ describe('Test for area rectangle function',()=>{
         expect(areaRectangle(10,20)).toBe(200)
     })
     it('return an error when width or length is zero', ()=>{
-        expect(()=>{areaRectangle(0,4)}).toThrow()
-        expect(()=>{areaRectangle(4,0)}).toThrow()
+        expect(areaRectangle(0,4)).toBe(false)
+        expect(areaRectangle(4,0)).toBe(false)
     })
     it('return an error when width and length are negative', ()=>{
-        expect(()=>{areaRectangle(-3,4)}).toThrow()
-        expect(()=>{areaRectangle(3,-4)}).toThrow()
+        expect(areaRectangle(-3,4)).toBe(false)
+        expect(areaRectangle(3,-4)).toBe(false)
     })
 })
 
@@ -25,11 +25,11 @@ describe('Test perimeter rectangle function', ()=>{
         expect(perimeterRectangle(10,20)).toBe(60)
     })
     it('return an error when length or width is zero',()=>{
-        expect(()=>{perimeterRectangle(0,4)}).toThrow()
-        expect(()=>{perimeterRectangle(4,0)}).toThrow()
+        expect(perimeterRectangle(0,4)).toBe(false)
+        expect(perimeterRectangle(4,0)).toBe(false)
     })
     it('return an error when a parameter is negative', ()=>{
-        expect(()=>{perimeterRectangle(-3,4)}).toThrow()
-        expect(()=>{perimeterRectangle(3,-4)}).toThrow()
+        expect(perimeterRectangle(-3,4)).toBe(false)
+        expect(perimeterRectangle(3,-4)).toBe(false)
     })
 })
