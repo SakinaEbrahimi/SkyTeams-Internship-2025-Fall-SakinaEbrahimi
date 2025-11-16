@@ -4,7 +4,7 @@
 
 const secondsToTime = require('./question-6')
 
-describe('test Convert seconds to hours minutes and seconds', ()=>{
+describe('Test Convert seconds to hours, minutes, and seconds', ()=>{
     it('return 1 hour, i min, 5 second when total seconds is 3665',()=>{
         const result = ['1 hours, 1 min, 5 seconds']
         expect(secondsToTime(3665)).toEqual(result)

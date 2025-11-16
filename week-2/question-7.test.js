@@ -4,7 +4,7 @@
 
 const isEven = require('./question-7')
 
-describe('Event and Odd', ()=>{
+describe('Test Even or Odd', ()=>{
     it('return true if number is even ',()=>{
         expect(isEven(12)).toBe(true)
         expect(isEven(24)).toBe(true)
