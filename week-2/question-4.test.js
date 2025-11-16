@@ -4,7 +4,7 @@
 
 const {fahrenhietToCelsius , celsiusToFahrenhiet } = require('./question-4')
 
-describe('Fahrenhite to Celsius',()=>{
+describe('Test Fahrenhite to Celsius',()=>{
     it('return 10 celsius for 50 fahrenhiet', ()=>{
         expect(fahrenhietToCelsius(50)).toBe(10)
     })

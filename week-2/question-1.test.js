@@ -4,7 +4,7 @@
 
 const swap = require('./question-1')
 
-describe('swap', ()=>{
+describe('Test swap', ()=>{
     it('should swap(a,b) to b(b,a)', ()=>{
         expect(swap(10,5)).toEqual([5,10])
     })
