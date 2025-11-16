@@ -4,7 +4,7 @@
 
 const numberStatus = require('./question-8')
 
-describe('NumberStatus',()=>{
+describe('Test Number Status',()=>{
     it('return Positive when number is greater than zero',()=>{
         expect(numberStatus(12)).toBe('Positive')
         expect(numberStatus(100)).toBe('Positive')
