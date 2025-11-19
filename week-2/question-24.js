@@ -5,7 +5,7 @@
     //input:12,18
     //output: 6
 
- function GCD(num1, num2){
+ function greateCommonDivisor(num1, num2){
     if( num1 === 0 || num2 === 0) return false
 
     num1 = Math.abs(num1)
@@ -20,4 +20,4 @@
     return num1
 }
 
-module.exports = GCD
+module.exports = greateCommonDivisor

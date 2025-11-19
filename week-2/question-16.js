@@ -11,7 +11,7 @@ module.exports =  function numberSequently(start, end){
         return false
     }
     for(i = start; i<=end; i++){
-        console.log(i)   
+        // console.log(i)   
     }
     return true     
 
