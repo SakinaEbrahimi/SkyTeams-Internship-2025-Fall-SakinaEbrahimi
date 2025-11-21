@@ -7,7 +7,7 @@ module.exports = function trafficLight(color){
     if( typeof color === "number" ){
         return false
     }
-    colors = color.toLowerCase()
+    const colors = color.toLowerCase()
     switch(colors){
         case 'red':
             return 'Stop'
