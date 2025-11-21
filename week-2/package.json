@@ -1,0 +1,13 @@
+{
+  "name": "week-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "question-1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
