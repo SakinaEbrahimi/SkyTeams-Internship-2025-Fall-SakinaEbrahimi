@@ -10,7 +10,7 @@ function numberDigits(num){
     if( typeof num === 'string' ) return false
 
     if( num === null  || num === undefined) return false
-    const count =0
+    let count =0
     if(num<0){
         num = (-1*num)
     }

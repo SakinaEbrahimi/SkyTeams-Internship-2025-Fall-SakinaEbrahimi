@@ -8,6 +8,10 @@
 
 function traingleValidity(a,b,c){
 
+    if(a === null || b === null || c === null) return false
+    if( (typeof a==='string') || (typeof b === 'string') || (typeof c === 'string') ) return false
+    if( a === undefined || b === undefined || c === undefined ) return false
+    
     if(a+b>c && a+c>b && b+c>a){
         if(a==b && a==c){
             return 'equilateral traingle'
@@ -17,7 +21,7 @@ function traingleValidity(a,b,c){
             return 'scalene traingle'
         }
     }else{
-        return 'invalid input'
+        return 'invalid traingle'
     }
 }
 
