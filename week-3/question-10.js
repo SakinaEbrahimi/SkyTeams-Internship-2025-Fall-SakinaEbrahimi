@@ -6,10 +6,14 @@
 
 function isPrime(num){
     if( typeof num === 'string' || num === null || num === undefined ) throw new Error('Invalid input')
-    for(i=2; i<num; i++){
+    for(i=2; i<=Math.sqrt(num); i++){
         if(num%i=== 0)
             return false
+        else{
+            return true
+        }
     }
     return true
 }
+
 module.exports = isPrime
