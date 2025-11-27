@@ -16,7 +16,7 @@ function occurrencesElement(arr, element){
         if( arr[i] === element) 
             count++
     }
-    return count++
+    return count
 }
 
 module.exports = occurrencesElement

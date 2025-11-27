@@ -30,5 +30,4 @@ function countVowels(str_value){
     }
     return count
 }
-console.log(countVowels('aa'))
 module.exports = countVowels
