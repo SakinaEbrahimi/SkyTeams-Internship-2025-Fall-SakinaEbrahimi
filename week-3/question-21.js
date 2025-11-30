@@ -95,13 +95,11 @@ function passwordChecker(pass){
             if(pass[i] in number){
                 is_num = true
             }
+            if(is_upper && is_lower && is_num){
+                return 'strong'
+            }
         }
-        if(is_upper && is_lower && is_num){
-            return 'strong'
-        }else{
            return 'weak'
-
-        }
     }else{
         return 'password length must be at least 8 character'
     }

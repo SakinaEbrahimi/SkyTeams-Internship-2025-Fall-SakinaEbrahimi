@@ -10,7 +10,7 @@
     //input:70, 1.75
     //output: BMI: 22.86(normal weight)
 
-function BMI(weight, heigh){
+function bodyMassIndex(weight, heigh){
 
     if(weight<0 || heigh<0 || weight===null || heigh===null || weight===undefined || heigh===undefined
         || typeof weight === 'string' || typeof heigh === 'string'  ){
@@ -20,12 +20,12 @@ function BMI(weight, heigh){
 
     if( bmi < 18.5 ){
         return `${bmi} underweight`
-    }else if( 18.5 <= bmi && bmi < 25 ){
+    }else if( bmi < 25 ){
         return `${bmi} normalweight`
-    }else if( 25 <= bmi && bmi < 30 ){
+    }else if( bmi < 30 ){
         return `${bmi} overweight`
     }else{
         return `${bmi} obese`
     }
 }
-module.exports = BMI
+module.exports = bodyMassIndex

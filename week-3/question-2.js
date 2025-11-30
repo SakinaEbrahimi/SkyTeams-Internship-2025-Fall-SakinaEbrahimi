@@ -5,18 +5,21 @@
     // output:4321
 
 
-function reverseNumber(num){
+function reverseNumber(number){
 
-    if( typeof num !== 'number' || !Number.isInteger(num) || typeof num === 'float' || num === null || num === undefined ){
+    if( typeof number !== 'number' || !Number.isInteger(number) || number === null || number === undefined ){
         throw new Error('Invalid Input')
     }
-    num = Math.abs(num)
-    let revers = 0
+    num = Math.abs(number)
+    let reverse = 0
     while( num !== 0 ){
-        revers = (num%10) + (revers*10)
+        reverse = (num%10) + (reverse*10)
         num = Math.floor(num/10)
     }
-    return revers
+    if(number < 0){
+        return -reverse
+    }
+    return reverse
 }
 
 module.exports = reverseNumber
