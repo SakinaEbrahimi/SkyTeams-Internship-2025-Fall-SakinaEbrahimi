@@ -1,7 +1,6 @@
   
     // Author: SakinaEbrahimi
-    // Description: Implement a stack (array based)
-    //operations: push, pop, peek, isempty
+    // Description: Implement a queue using two stacks
 
 const {enqueue, dequeue, peek} = require('./question-19')
 
