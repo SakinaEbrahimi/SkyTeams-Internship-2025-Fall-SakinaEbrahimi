@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SakinaEbrahimi/SkyTeams-Internship-2025-Fall-SakinaEbrahimi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SakinaEbrahimi/SkyTeams-Internship-2025-Fall-SakinaEbrahimi/issues"
+  },
+  "homepage": "https://github.com/SakinaEbrahimi/SkyTeams-Internship-2025-Fall-SakinaEbrahimi#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
