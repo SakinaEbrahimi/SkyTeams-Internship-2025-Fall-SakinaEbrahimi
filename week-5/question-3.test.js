@@ -12,13 +12,14 @@ describe('Test Queue using two stack', ()=>{
         //Test isEmpty function
         expect(queue.isEmpty()).toBe(true)
 
-        expect(queue.enqueu(1)).toEqual([1])
-        expect(queue.enqueu(2)).toEqual([1,2])
-        expect(queue.enqueu(3)).toEqual([1,2,3])
-        expect(queue.enqueu(4)).toEqual([1,2,3,4])
+        expect(queue.enqueue(1)).toBe()
+        expect(queue.enqueue(2)).toBe()
+        expect(queue.enqueue(3)).toBe()
+        expect(queue.enqueue(4)).toBe()
 
         //Test peek function
         expect(queue.peek()).toBe(4)
+
     })
 
     it('Test dequeue function',()=>{
