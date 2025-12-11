@@ -11,7 +11,6 @@ function removeDuplicates(str){
     if(typeof str !== 'string' || str === null || str === undefined) throw new Error('invalid input')
 
     const stack = new Stack()
-    let s = ''
     for(i=0; i<str.length; i++){
         if(str[i] === stack.peek()){
             stack.pop()
